@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Auto Hasanović | Kontakt</title>
+    <link href="kontakt-style.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="./images/logo.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="kontakt.js"></script>
+</head>
+<body>
+
+<header>
+    <img src="images/logo.jpg" alt="logo" id="logo">
+    <nav>
+        <a href="Index.html">Početak</a>
+        <a href="Prodaja.html">Prodaja</a>
+        <a class="current" href="#">Kontakt</a>
+    </nav>
+</header>
+
+<main>
+    <div id="text">
+        <h1>Kontaktirajte nas!</h1>
+        <p>Putem sljedećeg formulara nas možete kontaktirati vezano za bilo koji naš automobil, poslati upit za probnu vožnju
+        upit za iznajmljivanje vozila, ponudu za saradnju i bilo šta drugo što vam je potrebno. Mi ćemo vam odgovoriti
+        u što kraćem roku. Napomena: sva polja moraju biti popunjena da bi formular bio poslan!
+        </p>
+    </div>
+
+    <form action="form-validator.php" method="post">
+        <label for="name">Ime</label>
+        <input type="text" id="name" name="name" placeholder="Vaše ime: " style="background: transparent" required>
+        <label for="name">Email</label>
+        <input type="email" id="mail" name="mail" placeholder="Vaša email adresa: " style="background: transparent" required>
+        <label for="subject">Svrha</label>
+        <input type="text" id="subject" name="subject" placeholder="Svrha: " style="background: transparent" required>
+        <label for="message">Poruka</label>
+        <textarea id="message" name="message" placeholder="Poruka:"></textarea>
+        <input class="button" type="submit" id="submit-form">
+    </form>
+</main>
+
+<footer>
+    <p>&copy;2021. Auto Hasanović</p>
+    <a href="https://adem888.olx.ba/" target="_blank"><img src="drawable/olx.png" alt="olx" id="olx"></a>
+    <p>I Ulica Živinice, Bosna i Hercegovina</p>
+    <p>Kontakt Telefon: <span>062 982 384</span></p>
+    <p>Kontakt Telefon: <span>062 137 278</span></p>
+    <p>Email adresa: <span>autohasanovic2019@gmail.com</span></p>
+    <p>Email adresa: <span>admirhasanovic2017@gmail.com</span></p>
+</footer>
+
+</body>
+</html>

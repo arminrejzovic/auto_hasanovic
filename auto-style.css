@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background: black;
+    padding: 15px;
+    color: white;
+    max-height: 20vh;
+}
+
+nav{
+    float: right;
+    margin-top: 3vh;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-variant: small-caps;
+    font-size: 1.2em;
+}
+
+nav a:hover,nav .current{
+    border-bottom: 2px solid red;
+}
+
+#main{
+     padding-right: 10vw;
+    padding-left: 10vw;
+}
+
+#pictures{
+    width: 100%;
+    height: 70vh;
+    margin: auto;
+    margin-top: 20px;
+    background: url("images/VolkswagenGolf7NewModel-01.jpg") no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#left-nav, #right-nav{
+    width: 10%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-nav{
+    float: left;
+}
+
+#right-nav{
+    float: right;
+}
+
+#left-nav img, #right-nav img{
+    filter: invert(1);
+}
+
+#left-nav:hover, #right-nav:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.3);
+}
+
+#name-and-price{
+    display: grid;
+    grid-template-columns: 4fr 1.5fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#price{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+table{
+    width: 100%;
+}
+
+.label{
+    font-weight: bold;
+}
+
+#description{
+    line-height: 2;
+    border-top: 2px solid #f0f0f0;
+    border-bottom: 2px solid #f0f0f0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+footer img{
+    float: right;
+    height: 4vh;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 2vw;
+}
+
+footer img{
+    float: right;
+    height: 4vh;
+}
+
+
+@media only screen and (max-width: 650px) {
+    #logo{
+        display: none;
+    }
+
+    nav{
+        float: none;
+        text-align: center;
+    }
+
+    #pictures{
+        width: 90%;
+        height: 30vh;
+    }
+}

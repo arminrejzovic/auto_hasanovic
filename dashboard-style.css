@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background: black;
+    padding: 15px;
+    color: white;
+    height: 14vh;
+}
+
+header h1{
+    display: inline;
+}
+
+header img{
+    vertical-align: middle;
+}
+
+#insert, #delete, #messages{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    height: auto;
+    min-height: 70vh;
+    padding-top: 20px;
+}
+
+#insert input, textarea{
+    display: block;
+    padding: 5px;
+}
+
+#insert form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+#name{
+    width: 80%;
+}
+
+#description{
+    width: 80%;
+    height: 30%;
+}
+
+#submit{
+    width: 50%;
+    height: 10%;
+    margin-top: 20px;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    font-variant: small-caps;
+    font-weight: bold;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+#submit:hover{
+    color: red;
+}
+
+#submit:active{
+    transform: scale(.95);
+}
+
+table{
+    width: 100%;
+}
+
+th{
+    background-color: black;
+    color: white;
+}
+
+tr{
+    height: 6vh;
+}
+
+.carID,.delete, .messageID{
+    text-align: center;
+}
+
+td button{
+    background-color: crimson;
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+    outline: none;
+}
+
+.titlebar{
+    text-align: center;
+    margin: 5vh 20px 10px;
+    font-variant: small-caps;
+}
+
